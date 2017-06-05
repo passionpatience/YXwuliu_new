@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@color/white"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@android:color/white"
+        android:gravity="center_vertical">
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="10.0dip"-->
+        <!--android:text="@string/xiandongwuliu"-->
+        <!--android:textColor="@color/text_green"-->
+        <!--android:textSize="15.0sp"/>-->
+
+        <TextView
+            style="@style/title_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:text="货源列表" />
+
+        <RelativeLayout
+            android:id="@+id/iv_add"
+            android:layout_width="50.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/common_tab_bg">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/main_activtiy_add_normal" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/view_divider"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_car_source"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_tab_bar"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+        app:tabTextColor="@color/gray"
+        app:tabSelectedTextColor="@color/green"
+        app:tabIndicatorColor="@color/green"
+        app:tabMode="scrollable"/>
+
+    <!--<View-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="0.5sp"-->
+        <!--android:background="@color/top_bar_normal_bg"/>-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_car_source"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+</LinearLayout>

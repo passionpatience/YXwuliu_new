@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="280.0dip"
+              android:layout_height="fill_parent"
+              android:layout_gravity="center"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/order_id_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="5.0dip"
+                    android:text="@string/order_id"
+                    android:textColor="@color/green"
+                    android:textSize="18.0sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5.0dip"
+                    android:src="@mipmap/close_notify"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="@color/green"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/starting_img"/>
+
+                <TextView
+                    android:id="@+id/start_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text=""
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="10.0dip"
+                android:layout_marginLeft="14.5dip"
+                android:src="@mipmap/point_img"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/destination_img"/>
+
+                <TextView
+                    android:id="@+id/end_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text=""
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@color/backgroud_color"/>
+
+            <TextView
+                android:id="@+id/goods_detail_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="货物类型:"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/goods_detail_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/goods_detail"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/car_want_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/cars_want"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/remark_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/remark_info"
+                android:textColor="@color/gray"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="13.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/input_price"
+                    android:textColor="@color/green"
+                    android:textSize="16.0sp"/>
+
+                <EditText
+                    android:id="@+id/price_et"
+                    style="@style/textview_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:background="@color/viewfinder_mask"
+                    android:digits="0123456789."
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:minHeight="40.0dip"
+                    android:paddingLeft="2.0dip"
+                    android:singleLine="true"
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_order_ok"
+                style="@style/button_text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_margin="10dip"
+                android:background="@drawable/login_btn_selector"
+                android:text="@string/ok"/>
+
+            <TextView
+                android:id="@+id/friendly_tips"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="提醒: 如对方索取信息费，请谨慎交
+易！"
+                android:textColor="@color/red"
+                android:textSize="14.0sp"/>
+
+            <LinearLayout
+                android:id="@+id/warnView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/alreadly_auth_notes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="须知：发货人认证信息不完整,请知悉!"
+                    android:textColor="@color/red"
+                    android:textSize="14.0sp"/>
+
+                <TextView
+                    android:id="@+id/alreadly_auth_tag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:text="已认证:"
+                    android:textColor="@color/black"
+                    android:textSize="14.0sp"/>
+
+                <TextView
+                    android:id="@+id/alreadly_auth_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:lineSpacingExtra="2.0dip"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textColor="#ff98a1a7"
+                    android:textSize="14.0sp"/>
+
+                <TextView
+                    android:id="@+id/lack_str_tag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:text="缺少证件:"
+                    android:textColor="@color/black"
+                    android:textSize="14.0sp"/>
+
+                <TextView
+                    android:id="@+id/lack_str_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:lineSpacingExtra="2.0dip"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textColor="#ff98a1a7"
+                    android:textSize="14.0sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

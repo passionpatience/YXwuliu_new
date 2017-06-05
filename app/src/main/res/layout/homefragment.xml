@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+    <!-- 头部 -->
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/XRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/common_tab_bg"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:id="@+id/locationImg"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="60.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/common_tab_bg">
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableRight="@drawable/arrows_down"
+                android:text="广州"
+                android:textColor="#ff008f00"/>
+        </RelativeLayout>
+
+        <TextView
+            style="@style/title_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:text="首页"/>
+
+        <RelativeLayout
+            android:id="@+id/msg_setting"
+            android:layout_width="60.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/common_tab_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="消息"
+                android:textColor="#ff008f00"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--<include layout="@layout/discover_divider_layout" />-->
+
+    <!--滑动界面-->
+
+    <!--<in.srain.cube.views.ptr.PtrClassicFrameLayout-->
+    <!--android:id="@+id/ptr_frame"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="vertical">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<include layout="@layout/view_ad"/>&ndash;&gt;-->
+
+    <!--<ListView-->
+    <!--android:id="@+id/listView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"/>-->
+    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+    <!--</in.srain.cube.views.ptr.PtrClassicFrameLayout>-->
+</FrameLayout>

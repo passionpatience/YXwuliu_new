@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/titlebar_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="0.0px">
+
+        <TextView
+            android:id="@+id/titlebar_left_txt"
+            style="@style/TitleBarFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="empty"
+            android:clickable="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/titlebar_title"
+            style="@style/TitleBarTitleFont"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="empty" />
+
+        <ImageView
+            android:id="@+id/titlebar_title_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/titlebar_title"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/titlebar_right_txt"
+            style="@style/TitleBarFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="empty"
+            android:clickable="true"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/titlebar_right_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:contentDescription="empty"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/titlebar_left_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/top_btn_back"
+            android:contentDescription="empty"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/titlebar_right_txt"
+            android:layout_toEndOf="@+id/titlebar_right_txt" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/view_divider"></include>
+</LinearLayout>

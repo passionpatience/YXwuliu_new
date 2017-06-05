@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TitleBarFont">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="TitleBarTitleFont">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="title_text_style">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/person_title_bar_bg</item>
+    </style>
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="button_text_style">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:minWidth">35.0dip</item>
+        <item name="android:minHeight">25.0dip</item>
+    </style>
+
+    <!-- 请输入报价-->
+    <style name="textview_text_style">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:layout_marginRight">2.0dip</item>
+    </style>
+
+    <!-- 订单动态 -->
+    <style name="mygoods_item_text">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- SpinnerButton-->
+    <style name="Animation_dropdown" parent="@android:style/Animation.Activity">
+        <item name="android:activityCloseExitAnimation">@anim/pop_close_exit_anim</item>
+    </style>
+
+    <!-- 发车时间 -->
+    <style name="textview_goods">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/goods_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="btn_check_style">
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@drawable/checkbox_bg_selector</item>
+        <item name="android:text"></item>
+        <item name="android:drawablePadding">0.0dip</item>
+    </style>
+
+    <!-- 自定义时间选择的样式 -->
+    <style name="time_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+</resources>

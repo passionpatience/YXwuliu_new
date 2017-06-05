@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/backgroud_color"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp">
+
+        <include
+            android:id="@+id/imagebutton_delivergoods_back"
+            layout="@layout/commom_back_btn"/>
+
+        <TextView
+            style="@style/title_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="发布货源"
+            android:textColor="@color/text_green"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="#ffebebeb">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="64.0dip"
+                android:clickable="true"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:src="@drawable/start_point"/>
+
+                    <TextView
+                        style="@style/textview_goods"
+                        android:text="出发地"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textview_delivergoods_starting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="105.0dip"
+                    android:layout_marginRight="55.0dip"
+                    android:gravity="center_vertical"
+                    android:hint="请选择出发地"
+                    android:textSize="16.0sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton_delivergoods_starting"
+                        android:layout_width="50.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn_switch_selector"
+                        android:checked="false"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn=""/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="需要取货"
+                        android:textColor="@color/green"
+                        android:textSize="13.0sp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:background="#ffdbdbdb"/>
+
+            <RelativeLayout
+                android:id="@+id/takegoodsaddress_view"
+                android:layout_width="fill_parent"
+                android:layout_height="64.0dip"
+                android:clickable="true"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7.0dip"
+                    android:orientation="horizontal">
+
+                    <include
+                        layout="@layout/remark_red"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        style="@style/textview_goods"
+                        android:text="取货地址"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edittext_delivergoods_takegoodsaddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="105.0dip"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入取货详细地址"
+                    android:maxLength="30"
+                    android:textSize="16.0sp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:background="#ffdbdbdb"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="64.0dip"
+                android:clickable="true"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:src="@drawable/end_point"/>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        style="@style/textview_goods"
+                        android:text="到达地"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/edittext_delivergoods_ending"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="105.0dip"
+                    android:layout_marginRight="55.0dip"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请选择到达地"
+                    android:textSize="16.0sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/imageView_delivergoods_ending"
+                        android:layout_width="50.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn_switch_selector"
+                        android:checked="false"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn=""/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="需要送货"
+                        android:textColor="@color/green"
+                        android:textSize="13.0sp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:background="#ffdbdbdb"/>
+
+            <RelativeLayout
+                android:id="@+id/deliveryaddress_view"
+                android:layout_width="fill_parent"
+                android:layout_height="64.0dip"
+                android:clickable="true"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7.0dip"
+                    android:orientation="horizontal">
+
+                    <include
+                        layout="@layout/remark_red"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        android:id="@+id/textView_delivergoods_01"
+                        style="@style/textview_goods"
+                        android:text="送货地址"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edittext_delivergoods_deliveryaddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="105.0dip"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入送货详细地址"
+                    android:maxLength="30"
+                    android:textSize="16.0sp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="15.0dip"
+                android:background="#ffdbdbdb"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="64.0dip"
+                android:clickable="true"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7.0dip"
+                    android:orientation="horizontal">
+
+                    <include layout="@layout/remark_red"/>
+
+                    <TextView
+                        style="@style/textview_goods"
+                        android:text="货物类型"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/edittext_delivergoods_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="105.0dip"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请选择货物类型"
+                    android:textSize="16.0sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="10.0dip"
+                    android:src="@drawable/arrows_right_pull_down"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:background="#ffdbdbdb"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="64.0dip"
+                android:clickable="true"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7.0dip"
+                    android:orientation="horizontal">
+
+                    <include
+                        layout="@layout/remark_red"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        style="@style/textview_goods"
+                        android:text="货物名称"/>
+                </LinearLayout>
+
+                <AutoCompleteTextView
+                    android:id="@+id/goodsname_query"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="105.0dip"
+                    android:background="@null"
+                    android:hint="请输入货物名称"
+                    android:maxLength="20"
+                    android:textSize="16.0sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="10.0dip"
+                    android:src="@drawable/arrows_right_pull_down"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:background="#ffdbdbdb"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="64.0dip"
+                android:clickable="true"
+                android:paddingBottom="14.0dip"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:paddingTop="14.0dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7.0dip"
+                    android:orientation="horizontal">
+
+                    <include layout="@layout/remark_red"/>
+
+                    <TextView
+                        style="@style/textview_goods"
+                        android:text="货物重量"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edittext_delivergoods_kg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="105.0dip"
+                    android:background="@null"
+                    android:digits="0123456789."
+                    android:gravity="center_vertical"
+                    android:hint="请输入货物重量"
+                    android:inputType="numberDecimal"
+                    android:maxLength="8"
+                    android:textSize="16.0sp"/>
+
+                <Spinner
+                    android:id="@+id/spinner_tab"
+                    style="@style/textview_text_style"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="4.0dip"
+                    android:background="@color/text_gray"
+                    android:cursorVisible="false"
+                    android:drawableLeft="@drawable/arrows_down"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:minHeight="40.0dip"
+                    android:text="吨"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:background="#ffdbdbdb"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="64.0dip"
+                android:clickable="true"
+                android:paddingBottom="14.0dip"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:paddingTop="14.0dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7.0dip"
+                    android:orientation="horizontal">
+
+                    <include
+                        layout="@layout/remark_red"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        style="@style/textview_goods"
+                        android:text="货物体积"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edittext_delivergoods_cube"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="105.0dip"
+                    android:background="@null"
+                    android:digits="0123456789."
+                    android:gravity="center_vertical"
+                    android:hint="请输入货物体积"
+                    android:inputType="numberDecimal"
+                    android:maxLength="8"
+                    android:textSize="16.0sp"/>
+
+                <ImageView
+                    android:id="@+id/imageView_delivergoods_kg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="10.0dip"
+                    android:src="@drawable/arrows_right_pull_down"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/textView_delivergoods_ton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/edittext_delivergoods_cube"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="35.0dip"
+                    android:text="方"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:background="#ffdbdbdb"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="64.0dip"
+                android:clickable="true"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7.0dip"
+                    android:orientation="horizontal">
+
+                    <include
+                        layout="@layout/remark_red"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        style="@style/textview_goods"
+                        android:text="车辆需求"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/edittext_delivergoods_carneed"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="105.0dip"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请选择车辆需求"
+                    android:textSize="16.0sp"/>
+
+                <ImageView
+                    android:id="@+id/imageView_delivergoods_carneed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="10.0dip"
+                    android:src="@drawable/arrows_right_pull_down"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:background="#ffdbdbdb"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="64.0dip"
+                android:clickable="true"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7.0dip"
+                    android:orientation="horizontal">
+
+                    <include
+                        layout="@layout/remark_red"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        style="@style/textview_goods"
+                        android:text="装车时间"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/edittext_delivergoods_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="105.0dip"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请选择装车时间"
+                    android:textSize="16.0sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="10.0dip"
+                    android:src="@drawable/arrows_right_pull_down"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="15.0dip"
+                android:background="#ffdbdbdb"/>
+
+            <LinearLayout
+                android:id="@+id/button_delivergoods_more"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textview_delivergoods_more"
+                    style="@style/textview_goods"
+                    android:layout_marginRight="5.0dip"
+                    android:text="填写详细信息"/>
+
+                <ImageView
+                    android:id="@+id/imageview_delivergoods_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/arrows_down2"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:background="#ffdbdbdb"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_delivergoods_more"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="64.0dip"
+                    android:clickable="true"
+                    android:paddingBottom="14.0dip"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip"
+                    android:paddingTop="14.0dip">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7.0dip"
+                        android:orientation="horizontal">
+
+                        <include
+                            layout="@layout/remark_red"
+                            android:visibility="invisible"/>
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            style="@style/textview_goods"
+                            android:text="意向价格"/>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edittext_delivergoods_price"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="105.0dip"
+                        android:background="@null"
+                        android:digits="0123456789."
+                        android:gravity="center_vertical"
+                        android:hint="请输入意向价格"
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:textSize="16.0sp"/>
+
+                    <Spinner
+                        android:id="@+id/textview_delivergoods_unit"
+                        style="@style/textview_text_style"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="4.0dip"
+                        android:background="@color/viewfinder_mask"
+                        android:cursorVisible="false"
+                        android:drawableRight="@drawable/arrows_down"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:minHeight="40.0dip"
+                        android:paddingLeft="2.0dip"
+                        android:paddingRight="10.0dip"
+                        android:text="元/车"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.100000024dip"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:background="#ffdbdbdb"/>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="64.0dip"
+                    android:clickable="true"
+                    android:paddingBottom="14.0dip"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip"
+                    android:paddingTop="14.0dip">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7.0dip"
+                        android:orientation="horizontal">
+
+                        <include
+                            layout="@layout/remark_red"
+                            android:visibility="invisible"/>
+
+                        <TextView
+                            android:id="@+id/tvPhone"
+                            style="@style/textview_goods"
+                            android:text="收货电话"/>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edittext_delivergoods_tel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="105.0dip"
+                        android:background="@null"
+                        android:digits="1234567890"
+                        android:gravity="center_vertical"
+                        android:hint="请输入收货电话"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:textSize="16.0sp"/>
+
+                    <ImageView
+                        android:id="@+id/imageView005"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="10.0dip"
+                        android:src="@drawable/arrows_right_pull_down"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.100000024dip"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:background="#ffdbdbdb"/>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7.0dip"
+                        android:orientation="horizontal">
+
+                        <include
+                            layout="@layout/remark_red"
+                            android:visibility="invisible"/>
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            style="@style/textview_goods"
+                            android:text="备注信息"/>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@id/remark"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="105.0dip"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请输入备注信息"
+                        android:maxLength="30"
+                        android:minHeight="64.0dip"
+                        android:paddingBottom="5.0dip"
+                        android:paddingTop="5.0dip"
+                        android:textSize="16.0sp"/>
+
+                    <ImageView
+                        android:id="@+id/imageView007"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="10.0dip"
+                        android:src="@drawable/arrows_right_pull_down"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.100000024dip"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:background="#ffdbdbdb"/>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="64.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="14.0dip"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip"
+                    android:paddingTop="14.0dip">
+
+                    <include
+                        android:id="@+id/point_is_realname"
+                        layout="@layout/remark_red"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        android:id="@+id/tv_is_realname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="7.0dip"
+                        android:layout_toRightOf="@+id/point_is_realname"
+                        android:gravity="center_vertical"
+                        android:text="只允许实名车主联系我"
+                        android:textColor="@color/goods_text"
+                        android:textSize="16.0sp"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_is_realname"
+                        style="@style/btn_check_style"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroud_color"
+        android:orientation="horizontal"
+        android:paddingBottom="5.0dip"
+        android:paddingTop="5.0dip">
+
+        <Button
+            android:id="@+id/button_delivergoods_publish_cars"
+            style="@style/button_text_style"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/login_btn_selector"
+            android:text="发给常用车"/>
+
+        <Button
+            android:id="@id/button_delivergoods_publish"
+            style="@style/button_text_style"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/login_btn_selector"
+            android:text="立即发布"/>
+    </LinearLayout>
+</LinearLayout>

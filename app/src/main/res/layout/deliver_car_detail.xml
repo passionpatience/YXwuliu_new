@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="#ffebebeb"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp">
+
+        <include layout="@layout/commom_back_btn" />
+
+        <TextView
+            style="@style/title_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="发布车源"
+            android:textColor="@color/text_green" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#ffffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="64.0dip"
+                    android:clickable="true"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7.0dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5.0dip"
+                            android:src="@drawable/start_point" />
+
+                        <TextView
+                            style="@style/textview_goods"
+                            android:text="出发地" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/edittext_publishcars_starting"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="105.0dip"
+                        android:layout_marginRight="25.0dip"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请选择出发地"
+                        android:textSize="16.0sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView_publishcars_starting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="10.0dip"
+                        android:src="@drawable/arrows_right_pull_down" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.100000024dip"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:background="#ffdbdbdb" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="64.0dip"
+                    android:clickable="true"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7.0dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5.0dip"
+                            android:src="@drawable/end_point" />
+
+                        <TextView
+                            style="@style/textview_goods"
+                            android:text="到达地" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/edittext_publishcars_ending"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="105.0dip"
+                        android:layout_marginRight="25.0dip"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请选择到达地"
+                        android:textSize="16.0sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView_publishcars_ending"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="10.0dip"
+                        android:src="@drawable/arrows_right_pull_down" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="15.0dip"
+                    android:background="#ffdbdbdb" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="64.0dip"
+                    android:clickable="true"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7.0dip"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/remark_red" />
+
+                        <TextView
+                            style="@style/textview_goods"
+                            android:text="车辆类型" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/edittext_publishcars_cartype"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="105.0dip"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请输入车辆类型"
+                        android:textSize="16.0sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView_publishcars_cartype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="10.0dip"
+                        android:src="@drawable/arrows_right_pull_down" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.100000024dip"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:background="#ffdbdbdb" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="64.0dip"
+                    android:clickable="true"
+                    android:paddingBottom="14.0dip"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip"
+                    android:paddingTop="14.0dip">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7.0dip"
+                        android:orientation="horizontal">
+
+                        <include
+                            layout="@layout/remark_red"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            style="@style/textview_goods"
+                            android:text="承运重量" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edittext_publishcars_kg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="105.0dip"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请输入承运重量"
+                        android:inputType="numberDecimal"
+                        android:maxLength="8"
+                        android:textSize="16.0sp" />
+
+                    <eo.cn.yxwuliu.widgets.SpinnerButton
+                        android:id="@+id/spinner_tab"
+                        style="@style/textview_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="32.0dip"
+                        android:background="@color/transparent"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:minHeight="40.0dip"
+                        android:paddingLeft="2.0dip"
+                        android:paddingRight="10.0dip"
+                        android:text="吨" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.100000024dip"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:background="#ffdbdbdb" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="64.0dip"
+                    android:clickable="true"
+                    android:paddingBottom="14.0dip"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip"
+                    android:paddingTop="14.0dip">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7.0dip"
+                        android:orientation="horizontal">
+
+                        <include
+                            layout="@layout/remark_red"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            style="@style/textview_goods"
+                            android:text="承运体积" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edittext_publishcars_size"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="105.0dip"
+                        android:background="@null"
+                        android:hint="请输入承运体积"
+                        android:inputType="numberDecimal"
+                        android:maxLength="8"
+                        android:textSize="16.0sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView_publishcars_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="10.0dip"
+                        android:src="@drawable/arrows_right_pull_down"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/textview_delivergoods_Stere"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/edittext_publishcars_size"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="32.0dip"
+                        android:text="方" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.100000024dip"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:background="#ffdbdbdb" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="64.0dip"
+                    android:clickable="true"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7.0dip"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/remark_red" />
+
+                        <TextView
+                            style="@style/textview_goods"
+                            android:text="发车时间" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/edittext_publishcars_starttime"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="105.0dip"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请选择发车时间"
+                        android:textSize="16.0sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView_publishcars_starttime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="10.0dip"
+                        android:src="@drawable/arrows_right_pull_down" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.100000024dip"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:background="#ffdbdbdb" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:minHeight="64.0dip"
+                    android:paddingBottom="5.0dip"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip"
+                    android:paddingTop="5.0dip">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7.0dip"
+                        android:orientation="horizontal">
+
+                        <include
+                            layout="@layout/remark_red"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            style="@style/textview_goods"
+                            android:text="备注" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/remark"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="105.0dip"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请输入备注"
+                        android:maxLength="60"
+                        android:textSize="16.0sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="10.0dip"
+                        android:src="@drawable/arrows_right_pull_down"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.100000024dip"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:background="#ffdbdbdb" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_delivergoods_publish"
+                android:layout_width="fill_parent"
+                android:layout_height="46.0dip"
+                android:layout_marginBottom="30.0dip"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="20.0dip"
+                android:background="@drawable/login_btn_selector"
+                android:gravity="center"
+                android:text="发布"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

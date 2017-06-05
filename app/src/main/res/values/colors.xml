@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="divider_color">#e6e6e6</color>
+    <color name="white">#ffffff</color>
+    <color name="invest_product_list">#d9d9d9</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="dark_blue">#ff082a7a</color>
+    <color name="btn_order_normal">#ff08a852</color>
+    <color name="btn_order_pressed">#ff08bc5b</color>
+    <color name="common_item_pressed_color">#ffd9d9d9</color>
+    <color name="text_gray">#ff656565</color>
+    <color name="content_backgroud">#f2f2f2</color>
+    <color name="add_bank_card_color">#4169E1</color>
+    <color name="top_bar_normal_bg">#ff42a26e</color>
+    <color name="lightgrey">#d3d3d3</color>
+    <color name="bankselecedcolor">#f2f2f2</color>
+    <color name="dark_gray">#585757</color>
+    <color name="my_assert_titlebar_bg">#f95849</color>
+    <color name="circle_fill_color">#dfdbdb</color>
+    <color name="gray">#ff959183</color>
+    <color name="text_black">#ff343e48</color>
+    <color name="gray_pressed">#ffb5b5b6</color>
+    <color name="btn_order_noclick">#ffe0e0e0</color>
+    <color name="backgroud_color">#ffebedf0</color>
+    <color name="goods_text">#ff353535</color>
+    <color name="distance_color">#ffe84e0a</color>
+    <color name="goods_gray">#ff666666</color>
+    <color name="turn_color">#ff08bc5b</color>
+    <color name="text_highgray">#ff999999</color>
+    <color name="text_green">#ff14a83b</color>
+    <color name="text1">#59B29C</color>
+    <color name="text2">#333333</color>
+    <color name="split_line">#11112233</color>
+    <color name="tab_txt_selected_color">#d1564f</color>
+    <color name="tab_txt_normal_color">#616977</color>
+    <color name="phone_number_tips_txt_color">#ff9933</color>
+    <color name="hint_txt_color">#b5b5b5</color>
+    <color name="forget_pwd_txt_color">#6699cc</color>
+    <color name="percent70">#b3000000</color>  <!--透明度70%-->
+    <color name="percent80">#cc000000</color>  <!--透明度80%-->
+    <color name="percent85">#d9000000</color>  <!--透明度85%-->
+    <color name="percent90">#e6000000</color>  <!--透明度90%-->
+    <color name="bg_list_item_base_product_pressed">#d9d9d9</color>
+    <color name="radio_button_selected_color">#ff6699cc</color>
+    <color name="radio_button_unselected_color">@android:color/transparent</color>
+    <color name="black_common">#ff434343</color>
+    <color name="red_pres">#ffd1564f</color>
+    <color name="gray_light4">#ff999999</color>
+    <color name="divider_selection">#f2f2f2</color>
+    <color name="dialog_tips_bg">#eeeeee</color>
+    <color name="dialog_tips_btn">#d6d6d6</color>
+    <color name="dialog_tips_line">#c6c6c6</color>
+    <color name="dialog_tips_title_txt">#434343</color>
+    <color name="dialog_tips_content_txt">#898989</color>
+    <color name="dialog_tips_negative_btn_txt">#6699cc</color>
+    <color name="dialog_tips_positive_btn_txt">#c34949</color>
+    <color name="expand_list_view_detail_bg">#f2f2f2</color>
+    <color name="question_category">#f7f7f7</color>
+    <color name="red_bg">#f6534c</color>
+    <color name="red_bg_deep">#e15041</color>
+    <color name="total_account">#fccbca</color>
+    <color name="total_account_tips">#fcc7c6</color>
+    <color name="my_balance">#feebe6</color>
+
+    <color name="txt_red">#d1564f</color>
+    <color name="txt_gray">#999999</color>
+    <color name="txt_dark_gray">#434343</color>
+    <color name="red_light10">#fff95749</color>
+    <color name="red_light5">#ffd1564f</color>
+    <color name="vertical_divider_color">#ffefefef</color>
+    <color name="table_divider_color">#cecece</color>
+
+    <color name="pink_light1">#e6fff3f0</color>
+    <color name="black_light1">#ff333333</color>
+    <color name="gray_bg_global">#fff2f2f2</color>
+    <color name="tb_check_trade_record_color">#ffff663f</color>
+    <color name="gray_light">#ff707070</color>
+    <color name="yellow_chocolate">#fff17336</color>
+    <color name="gray_light9">#fff9f9f9</color>
+    <color name="assets_detail_dark">#ff666666</color>
+    <color name="black_light2">#ff666666</color>
+    <color name="keyboard_safe_bg">#282828</color>
+    <color name="trade_password_border">#c8c7cc</color>
+
+
+    <color name="line_color">#ff6740</color>
+    <color name="slash_line_color">#ff663f</color>
+    <color name="chart_fill_color">#ffece7</color>
+    <color name="black_overlay">#60000000</color>
+    <color name="buy_normal">#bd4e48</color>
+    <color name="buy_pressed">#752c2c</color>
+    <color name="txt_buy_now">#d9d9d9</color>
+    <color name="title_home">#00000000</color><!--透明的色值-->
+    <color name="search_bg">#0d000000</color>
+    <color name="search_bg2">#87CEEB</color>
+
+    <!-- item_common_view-->
+    <color name="item_common_summary">#333333</color>
+    <color name="item_common_detail">#999999</color>
+
+    <!-- 登陆 注册-->
+    <color name="tv_large_register">#f17336</color>
+    <color name="bg_large_register">#e4ceb4</color>
+    <color name="tv_login_find_password">#549cc1</color>
+
+    <color name="green">#49ba2a</color>
+    <color name="green2">#66a383</color>
+    <color name="product_publish_text">#626262</color>
+    <color name="product_publish_text2">#cbcbcb</color>
+    <color name="person_txt">#626262</color>
+    <color name="person_title_bar_bg">#19d78e</color>
+    <color name="purchase_order_bg">#bbe4d4</color>
+    <color name="shape_gray_btn">#e1d9d9</color>
+    <color name="product_publish_dailog">#F6F6F6</color>
+    <color name="MyOrderText">#8f8f8f</color>
+
+</resources>
+
